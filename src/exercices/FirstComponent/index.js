@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SecondComponent from './SecondComponent.js'
+import Card from 'components/Card'
 import Button from 'components/Button'
 
 const FirstComponent= () => {
@@ -14,6 +14,30 @@ const FirstComponent= () => {
       <Button color="green" to="/contexts">
         Les contexts
       </Button>
+      <br/>
+      <br/>
+      <Card 
+      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
+      Title = "Giga Chad"
+      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Btn = "Acceder aux chapitres"
+      />
+
+    <Card 
+      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
+      Title = "Giga Chad"
+      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Btn = "Acceder aux chapitres"
+      />
+      
+      <Card 
+      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
+      Title = "Giga Chad"
+      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Btn = "Acceder aux chapitres"
+      />
+
+        
     </div>
   )
 }

@@ -7,3 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+:root {
+  --main-color: rgb(139, 29, 161);
+  --background-color: #000;
+  --white-color: #FAFAFA;
+}
