@@ -12,19 +12,29 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+      
       <Switch>
-        <Route path="/first-component">
+
+        <Route exact path="/first-component">
           <FirstComponentExercice />
         </Route>
-        <Route path="/styling-components">
+
+        <Route exact path="/styling-components">
           <StylingComponentsExercice />
         </Route>
-        <Route path="/contexts">
+
+        <Route exact path="/contexts">
           <ContextsExercice />
         </Route>
-        <Route path="/">
+
+        <Route exact path="/">
           <FirstComponentExercice />
         </Route>
+
+        <Route path="*">
+          404
+        </Route>
+
       </Switch>
     </BrowserRouter>
   );
