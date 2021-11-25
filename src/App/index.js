@@ -8,12 +8,19 @@ import FirstComponentExercice from 'exercices/FirstComponent'
 import StylingComponentsExercice from 'exercices/StylingComponents'
 import ContextsExercice from 'exercices/Contexts'
 
+// Pages
+import Home from 'pages/Home'
+
 function App() {
   return (
     <BrowserRouter>
       <Header />
       
       <Switch>
+
+        <Route exact path="/Home">
+          <Home />
+        </Route>
 
         <Route exact path="/first-component">
           <FirstComponentExercice />
@@ -28,7 +35,7 @@ function App() {
         </Route>
 
         <Route exact path="/">
-          <FirstComponentExercice />
+          <Home />
         </Route>
 
         <Route path="*">

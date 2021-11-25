@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Card from 'components/Card'
 import Button from 'components/Button'
 
@@ -29,7 +28,7 @@ const FirstComponent= () => {
       Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
       Btn = "Acceder aux chapitres"
       />
-      
+
       <Card 
       Img = "https://wallpaperaccess.com/full/6999297.jpg" 
       Title = "Giga Chad"
