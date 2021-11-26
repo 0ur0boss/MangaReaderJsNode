@@ -1,0 +1,45 @@
+/* * {
+    box-sizing: border-box;
+  }
+  
+  .imgSlider {
+    max-width: 700px;
+    margin: 0 auto;
+  } */
+
+.carousel {
+    position: relative;
+  }
+
+.overlay {
+    width: 80%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:10%;
+    padding: 0.4rem 1.5rem;
+    text-align: right;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+.overlay__title {
+    margin: 0.8rem 0 1rem 0;
+  }
+
+.overlay__text {
+  margin: 0.8rem 0 1rem 0;
+}
+
+.contenant {
+  max-width: 600px;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+@media screen and (max-width: 768px) {
+  .contenant {
+    max-width: 500px;
+  }
+}
