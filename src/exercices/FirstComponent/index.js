@@ -1,20 +1,42 @@
 import React from 'react'
-
-import SecondComponent from './SecondComponent.js'
+import Card from 'components/Card'
+import Button from 'components/Button'
 
 const FirstComponent= () => {
   return (
-    <div>
-      First component
-      <SecondComponent
-        color="red"
-      >
-        Second component children
-      </SecondComponent>
+    <div style={{ padding:"100px"}}>
+      <Button color="red" to="/styling-components">
+        Les components stylées
+      </Button>
+      <br/>
+      <br/>
+      <Button color="green" to="/contexts">
+        Les contexts
+      </Button>
+      <br/>
+      <br/>
+      <Card 
+      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
+      Title = "Giga Chad"
+      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Btn = "Acceder aux chapitres"
+      />
 
-      <SecondComponent>
-        Second component children green please
-      </SecondComponent>
+    <Card 
+      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
+      Title = "Giga Chad"
+      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Btn = "Acceder aux chapitres"
+      />
+
+      <Card 
+      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
+      Title = "Giga Chad"
+      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Btn = "Acceder aux chapitres"
+      />
+
+        
     </div>
   )
 }

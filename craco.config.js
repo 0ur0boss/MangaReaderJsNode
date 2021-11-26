@@ -5,7 +5,8 @@ module.exports = {
   webpack: {
     alias: {
       'components': path.resolve(__dirname, './src/components'),
-      'exercices': path.resolve(__dirname, './src/exercices')
+      'exercices': path.resolve(__dirname, './src/exercices'),
+      'pages' : path.resolve(__dirname, './src/pages')
     },
   },
 };

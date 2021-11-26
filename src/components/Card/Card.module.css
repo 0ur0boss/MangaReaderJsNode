@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    overflow: hidden;
+    box-shadow: 0 2px 20px #e1e5ee;
+    border-radius:0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    background-color: var(--white-color);
+    font : var(--white-color);
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card_img{
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card_title{
+    padding:1rem;
+}
+
+.card_description{
+    padding:0 1rem;
+}
+
+.card_btn{
+    padding:1rem;
+    font-weight: bold;
+    font: size 1rem;
+    margin: 1rem;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);;
+    border-radius:0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card_btn:hover{
+    background: var(--main-color);
+    color:  var(--white-color);
+}
