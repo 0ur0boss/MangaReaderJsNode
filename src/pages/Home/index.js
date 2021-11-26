@@ -2,6 +2,7 @@ import React from 'react'
 // import { Link } from 'react-router-dom'
 import Card from 'components/Card'
 import styles from './Home.module.css'
+import image1 from '../../img/whiteblood.jpg'
 
 const home = () => {
     
@@ -12,71 +13,71 @@ const home = () => {
 
     {/* une card avec les differents options */}
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1}
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
 
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
 
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
       
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
 
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
 
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
-      Btn = "Acceder aux chapitres"
-      />
-
-    <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
 
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
 
     <Card 
-      Img = "https://wallpaperaccess.com/full/6999297.jpg" 
-      Title = "Giga Chad"
-      Description = "Si vous voulez etre aussi Chad que le giga chad, lisez son histoire."
+      Img = {image1} 
+      Title = "Titre Manga"
+      Description = "Description du manga."
+      Btn = "Acceder aux chapitres"
+      />
+
+    <Card 
+      Img = {image1}
+      Title = "Titre Manga"
+      Description = "Description du manga."
       Btn = "Acceder aux chapitres"
       />
     </div>
