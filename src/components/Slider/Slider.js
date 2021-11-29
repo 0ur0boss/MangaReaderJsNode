@@ -32,7 +32,7 @@ function Slider() {
     // }
     return (<Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} div className={styles.contenant}>
         { imageSlider.map(function (elt) { return <div className={styles.contenant}>
-                    <img className={styles.imgSlider} src={elt.imageUrl } alt="Image" />
+                    <img className={styles.imgSlider} src={elt.imageUrl } alt="webtoons" />
                     <div className={styles.overlay}>
                         <h2 className={styles.overlay__title}>{elt.title}</h2>
                         <p className={styles.overlay__text}>{elt.text}</p>
@@ -41,13 +41,13 @@ function Slider() {
     </Carousel>)
 }
 
-const Button = ({ text }) => {
-    return (
-        <button>
-            {text}
-        </button>
-    );
-};
+// const Button = ({ text }) => {
+//     return (
+//         <button>
+//             {text}
+//         </button>
+//     );
+// };
 
 
 export default Slider;

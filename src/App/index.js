@@ -2,27 +2,29 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
 import Slider from "../components/Slider";
 
-import Header from "components/Header";
+// import Header from "components/Header";
 
 // Exercices
 import FirstComponentExercice from 'exercices/FirstComponent'
 import StylingComponentsExercice from 'exercices/StylingComponents'
 import ContextsExercice from 'exercices/Contexts'
+import Webtoon from '../pages/Webtoon/Webtoon.js'
 
 // Pages
 import Home from 'pages/Home'
 
 function App() {
   return (
-   
+
     <BrowserRouter>
-     <div>
-    <Slider/>
-  </div>
-    
+      <div>
+        <Slider />
+      </div>
+
       {/* <Header /> */}
-      
+
       <Switch>
+        
 
         <Route exact path="/Home">
           <Home />
@@ -40,6 +42,10 @@ function App() {
           <ContextsExercice />
         </Route>
 
+        <Route exact path="/manga-description">
+          < Webtoon/>
+        </Route>
+
         <Route exact path="/">
           <Home />
         </Route>
@@ -54,3 +60,5 @@ function App() {
 }
 
 export default App;
+
+
