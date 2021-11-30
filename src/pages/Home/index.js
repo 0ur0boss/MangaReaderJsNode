@@ -13,7 +13,7 @@ const Home = () => {
       </div>
 
       {/* le container qui a toutes les cards */}
-      <div className={styles.wrapper}>
+      <div>
         {/* La search et toutes les cartes */}
         <Search/>
       </div>

@@ -18,16 +18,18 @@ const SearchBar = () => {
     return (
         <section>
             <div>
-                <div>
+                <div className={styles.searchbar}>
                 <label />
                 <input 
                 type="text"
                 value={filter}
-                onChange={searchText.bind(this)}              
+                onChange={searchText.bind(this)}   
+                placeholder="Search..."           
                 />
+                <div className={styles.search}></div>
                 </div>
                 {/* On affiche les cards en function de la search bar (avec dataSearch) */}
-                <div>
+                <div className={styles.wrapper}>
                 {dataSearch.map(({ img, title, btn, description }) => (
                 <Card img={img} title={title} btn={btn} description={description} />
                 ))}
