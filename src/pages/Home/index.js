@@ -3,11 +3,15 @@ import React from "react";
 import styles from "./Home.module.css";
 import { cards } from "../../components/data/cards";
 import Card from "../../components/Card";
+import Slider from "components/Slider";
 // import Search from'component/SearchBar';
 
 const Home = () => {
   return (
     <div>
+      <div>
+        <Slider />
+      </div>
 
       {/* le container qui a toutes les cards */}
       <div className={styles.wrapper}>
