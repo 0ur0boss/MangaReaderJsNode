@@ -1,10 +1,9 @@
 import React from "react";
 // import { Link } from 'react-router-dom'
 import styles from "./Home.module.css";
-import { cards } from "../../components/data/cards";
-import Card from "../../components/Card";
+
 import Slider from "components/Slider";
-// import Search from'component/SearchBar';
+import Search from "components/SearchBar";
 
 const Home = () => {
   return (
@@ -15,10 +14,8 @@ const Home = () => {
 
       {/* le container qui a toutes les cards */}
       <div className={styles.wrapper}>
-        {/* une card avec les differents options */}
-        {cards.map((card) => (
-          <Card card={card} />
-        ))}
+        {/* La search et toutes les cartes */}
+        <Search/>
       </div>
     </div>
   );
