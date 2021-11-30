@@ -3,14 +3,9 @@ import './App.css';
 
 // import Header from "components/Header";
 
-// Exercices
-import FirstComponentExercice from 'exercices/FirstComponent'
-import StylingComponentsExercice from 'exercices/StylingComponents'
-import ContextsExercice from 'exercices/Contexts'
-import Webtoon from '../pages/Webtoon/Webtoon.js'
-
 // Pages
 import Home from 'pages/Home'
+import Webtoon from '../pages/Webtoon/Webtoon.js'
 
 function App() {
   return (
@@ -25,18 +20,6 @@ function App() {
 
         <Route exact path="/Home">
           <Home />
-        </Route>
-
-        <Route exact path="/first-component">
-          <FirstComponentExercice />
-        </Route>
-
-        <Route exact path="/styling-components">
-          <StylingComponentsExercice />
-        </Route>
-
-        <Route exact path="/contexts">
-          <ContextsExercice />
         </Route>
 
         <Route exact path="/manga-description">

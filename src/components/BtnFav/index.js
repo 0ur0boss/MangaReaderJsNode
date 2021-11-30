@@ -20,7 +20,7 @@ const BtnFav = () => {
     };
   
     return (
-      <button onClick={favoris ? addToFavorite : deleteFromFavorite} type="button">{favoris ? "Ajouter aux favoris" : "Enlever des favoris"}</button>
+      <button onClick={favoris ? deleteFromFavorite : addToFavorite} type="button">{favoris ? "Enlever des favoris" : "Ajouter aux favoris"}</button>
     )
 }
 
