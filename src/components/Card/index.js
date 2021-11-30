@@ -18,12 +18,7 @@ const Card = ({ img, title, description, btn }) => {
       <button
         className={styles.card_btn}
         onClick={() => {
-          history.push("/manga-description");
-        }}
-        type="button"
-      >
-        {btn}
-      </button>
+          history.push("/manga-description");}}type="button">{btn}</button>
     </div>
   );
 };

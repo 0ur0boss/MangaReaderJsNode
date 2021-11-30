@@ -1,23 +1,57 @@
 // import styles from './Webtoon.module.css';
 import React from 'react' 
-// import { Link } from 'react-router-dom'
 import { useState } from 'react';
-// import { home } from "../Home/index.js";
+import { cards } from "../../components/data/cards.js";
 
 const Webtoon = () => {
 
-  const [favoris, setFavoris] = useState(false);
-  
+  let [favoris, setFavoris] = useState([]);
 
-  const addFavoris = () => {
-    setFavoris(!favoris);
-    localStorage.setItem("favoris", true);
-  }
+  const addToFavorite = id => {
+    console.log('check addtofavorite');
+    const data = cards.find(item => item.id === id);
+    setFavoris([...favoris, data]);
+  };
+  
+  const deleteFromFavorite = id => {
+    console.log('check deletefromfavorite');
+    const erase = favoris.filter(item => item.id !== id);
+    setFavoris(erase);
+  };
 
   return (
-    <button onClick={addFavoris} type="button">{favoris ? "Enlever des favoris" : "Ajouter aux favoris"}</button>
+    <button onClick={favoris ? addToFavorite : deleteFromFavorite} type="button">{favoris ? "Ajouter aux favoris" : "Enlever des favoris"}</button>
   )
    
 }
 
 export default Webtoon
+
+
+
+  // const addFavoris = id => {
+  //   this.setState(
+  //     {
+  //       addToFav: !this.addToFav
+  //     },
+  //     () => console.log(this.addToFav)
+  //   );
+
+  // }
+
+
+
+
+    // setFavoris(!favoris);
+    // localStorage.setItem("favoris", true);
+
+// render() {
+//   let list = data.map((obj) => {
+//      return <div key={obj.id} id={obj.id} onClick={() => this.handleClick(obj.id)}></div>         
+//   }
+//   return <div>{list}</div>;
+// }
+
+// handleClick(id){
+//  console.log(id);
+// }
