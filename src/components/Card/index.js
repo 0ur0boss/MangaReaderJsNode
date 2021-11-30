@@ -5,8 +5,9 @@ import { cards } from "components/data/cards.js";
 
 import { useHistory } from "react-router-dom";
 
-const Card = ({ img, title, description, btn }) => {
+const Card = ({ card }) => {
   const history = useHistory();
+  const { img, title, btn, description, id } = card;
 
   return (
     <div className={styles.card}>
@@ -22,10 +23,8 @@ const Card = ({ img, title, description, btn }) => {
         onClick={() => {
           history.push("/manga-description");}}type="button">{btn}
       </button>
-      {cards.map(({ id }) => (
-          <BtnFav id={id}/>
-          ))}
-      {/* <BtnFav id={id}/> */}
+
+      <BtnFav/>
     </div>
   );
 };
