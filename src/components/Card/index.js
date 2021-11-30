@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Card.module.css";
 import BtnFav from "components/BtnFav";
+import { cards } from "components/data/cards.js";
 
 import { useHistory } from "react-router-dom";
 
@@ -21,7 +22,10 @@ const Card = ({ img, title, description, btn }) => {
         onClick={() => {
           history.push("/manga-description");}}type="button">{btn}
       </button>
-      <BtnFav />
+      {cards.map(({ id }) => (
+          <BtnFav id={id}/>
+          ))}
+      {/* <BtnFav id={id}/> */}
     </div>
   );
 };
