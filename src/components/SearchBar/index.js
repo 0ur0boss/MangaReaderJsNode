@@ -1,21 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./SearchBar.module.css";
+import { cards } from "../../components/data/cards";
 
 
 const SearchBar = () => {
 
-    const [searchTerm, setSearchTerm] = useState("");
-    const searchHandler = () => {};
-    term={searchTerm};
-    searchKeyword={searchHandler}
-
+    const [filter, setFilter] = useState('');
+    const searchText = (event) =>{
+        setFilter(event.target.value);
+    }
+    console.warn(filter)
     return (
-        <div className="search">
-        <div className="icon input">
-          <input type="text" placeholder="Search a Webtoons" className="prompt"></input>
-        <i className="search icon"></i>
-        </div>
-      </div>
+        <section>
+            <div>
+                <label />
+                <input 
+                type="text"
+                value={filter}
+
+                
+                />
+            </div>
+        </section>
+
     )
 
 };

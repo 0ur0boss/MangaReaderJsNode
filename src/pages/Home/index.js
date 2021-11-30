@@ -4,11 +4,14 @@ import styles from "./Home.module.css";
 import { cards } from "../../components/data/cards";
 import Card from "../../components/Card";
 import Slider from "components/Slider";
-// import Search from'component/SearchBar';
+import Search from "components/SearchBar";
 
 const Home = () => {
   return (
     <div>
+      <div>
+        <Search/>
+      </div>
       <div>
         <Slider />
       </div>
