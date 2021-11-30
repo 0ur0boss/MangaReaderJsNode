@@ -16,9 +16,9 @@ const Home = () => {
       {/* le container qui a toutes les cards */}
       <div className={styles.wrapper}>
         {/* une card avec les differents options */}
-        {cards.map(({ img, title, btn, description }) => (
-          <Card img={img} title={title} btn={btn} description={description} />
-          ))}
+        {cards.map((card) => (
+          <Card card={card} />
+        ))}
       </div>
     </div>
   );
