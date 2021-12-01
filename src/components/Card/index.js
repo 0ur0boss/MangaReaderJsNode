@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./Card.module.css";
-import BtnFav from "components/BtnFav";
-import { cards } from "components/data/cards.js";
+import BtnFav from "../BtnFav";
 
 import { useHistory } from "react-router-dom";
 
-const Card = ({ card }) => {
+const Card = ({ manga, favs, handleFav }) => {
   const history = useHistory();
-  const { img, title, btn, description, id } = card;
+  const { img, title, btn, description, id } = manga;
 
   return (
     <div className={styles.card}>
@@ -21,10 +20,17 @@ const Card = ({ card }) => {
       <button
         className={styles.card_btn}
         onClick={() => {
-          history.push("/manga-description");}}type="button">{btn}
+          history.push("/manga-description");
+        }}
+        type="button"
+      >
+        {btn}
       </button>
-
-      <BtnFav/>
+      <BtnFav className={styles.card_btn}
+        id={id}
+        isFaved={favs.includes(id)}
+        onClick={() => handleFav(id)}
+      />
     </div>
   );
 };
