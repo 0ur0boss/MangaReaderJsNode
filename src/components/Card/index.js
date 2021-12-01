@@ -16,7 +16,7 @@ const Card = ({ manga, favs, handleFav }) => {
         <p className={styles.card_description}>{description}</p>
       </div>
       {/* <button className={styles.card_btn}>{Btn}</button> */}
-      <Link to="/manga-description">
+      <Link to={`/manga/${id}`}>
         <button
           className={styles.card_btn}
           type="button"

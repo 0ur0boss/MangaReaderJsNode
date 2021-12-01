@@ -17,6 +17,7 @@
     transition: transform 200ms ease-in;
     background-color: var(--background-color);
     font : var(--background-color);
+    margin-bottom: 1.5rem;
 
 }
 

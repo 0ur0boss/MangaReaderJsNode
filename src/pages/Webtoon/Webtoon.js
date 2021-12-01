@@ -1,36 +1,26 @@
-import React, { useContext } from 'react' 
-import BtnFav from "components/BtnFav";
-import { Link } from "react-router-dom";
+import React, { useContext, useState, useEffect } from 'react' 
+// import BtnFav from "components/BtnFav";
+import { useParams } from "react-router-dom";
 import AppContext from "../../contexts/AppContext";
 
 
-const Webtoon = ({ manga, favs, handleFav }) => {
-   const { mangas, favs, toggleFav } = useContext(AppContext);
-   const { img, title, btn, description, id } = manga;
+const Webtoon = () => {
+  // je recupaire le l'iD dans l URL
+  const { mangaId } = useParams();
+  const { mangas } = useContext(AppContext);
+  const [filteredManga, setFilteredManga] = useState();
 
-   return (
-      <div>
-        <div>
-          <img src={img} alt="" />
-          <h2> {title}</h2>
-          <p>{description}</p>
-        </div>
-        {/* <button className={styles.card_btn}>{Btn}</button> */}
-        <Link to="/manga-description">
-          <button
-            type="button"
-          >
-            {btn}
-          </button>
-        </Link>
+  useEffect(() => {
+    setFilteredManga(mangas.find(manga => manga.id === parseInt(mangaId)));
+  }, [mangaId, mangas]);
+
   
-        <BtnFav
-          id={id}
-          isFaved={favs.includes(id)}
-          onClick={() => handleFav(id)}
-        />
-      </div>
-    );
+
+  return (<div>
+      <div>ID : {filteredManga?.id || 'no id'}</div>
+      <div>Title : {filteredManga?.title || 'no title'}</div>
+    </div>
+   );
 
 }
 

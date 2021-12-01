@@ -43,8 +43,8 @@ function App() {
             <Home />
           </Route>
 
-          <Route exact path="/manga-description">
-            < Webtoon/>
+          <Route exact path="/manga/:mangaId">
+            <Webtoon />
           </Route>
 
           <Route exact path="/">
