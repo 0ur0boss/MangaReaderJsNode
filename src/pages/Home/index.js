@@ -1,24 +1,19 @@
-import React from "react";
+import React, { useContext }  from "react";
 import styles from "./Home.module.css";
-import { cards } from "../../components/data/cards";
+// import { cards } from "../../components/data/cards";
 import Card from "../../components/Card";
 import Slider from "../../components/Slider";
 import SearchBar from "../../components/SearchBar";
+import AppContext from "../../contexts/AppContext";
 
 const Home = () => {
-  const [mangas, setMangas] = React.useState(cards);
-  const [search, setSearch] = React.useState("");
 
-  const [favs, setFavs] = React.useState([]);
+  // Je recupere le context qui contient la data de toutes les cards et mangas
+  const { mangas, favs, toggleFav } = useContext(AppContext);
+  const [search, setSearch] = React.useState(""); 
 
   function handleFav(id) {
-    const isAlreadyFaved = favs.includes(id);
-
-    if (isAlreadyFaved) {
-      return setFavs((prev) => prev.filter((favId) => favId !== id));
-    }
-
-    setFavs((prev) => [...prev, id]);
+    toggleFav(id)
   }
 
   function handleSearch(searchString) {

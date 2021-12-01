@@ -7,7 +7,7 @@ import image3 from "../../img/lecteuromniscient.jpg";
 //             PROBLEME : je déclare autant de boolean que de publication (ex: j'ai 3 000 000 de publi j'ai 3 000 000 )
 // solution 2 : déclarer une liste de favoris (qui s'agrandie a chaque fois que j'aime un new truc)
 
-export const cards = [
+const cards = [
   {
     id: 1,
     title: "WhiteBlood",
@@ -32,3 +32,6 @@ export const cards = [
     btn: "Acceder aux chapitres"
   }
 ];
+
+
+export default cards
