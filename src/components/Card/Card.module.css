@@ -15,8 +15,8 @@
     justify-content: space-between;
     cursor: pointer;
     transition: transform 200ms ease-in;
-    background-color: var(--white-color);
-    font : var(--white-color);
+    background-color: var(--background-color);
+    font : var(--background-color);
 
 }
 
@@ -52,5 +52,5 @@
 
 .card_btn:hover{
     background: var(--main-color);
-    color:  var(--white-color);
+    color:  var(--background-color);
 }

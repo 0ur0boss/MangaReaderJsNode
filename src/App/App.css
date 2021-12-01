@@ -11,6 +11,6 @@ body {
 
 :root {
   --main-color: rgb(139, 29, 161);
-  --background-color: #000;
-  --white-color: #FAFAFA;
+  --background-color: #FAFAFA;
+  --element-color: #000;
 }
