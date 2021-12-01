@@ -8,10 +8,6 @@ import AppContext from "../../contexts/AppContext";
 const Card = ({ manga, favs, handleFav }) => {
   const { img, title, btn, description, id } = manga;
   
-
-
-
-
   return (
     <div className={styles.card}>
       <div className={styles.card_body}>
@@ -29,7 +25,7 @@ const Card = ({ manga, favs, handleFav }) => {
         </button>
       </Link>
 
-      <BtnFav className={styles.card_btn}
+      <BtnFav
         id={id}
         isFaved={favs.includes(id)}
         onClick={() => handleFav(id)}
