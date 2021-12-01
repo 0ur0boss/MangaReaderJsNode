@@ -7,7 +7,7 @@ function SearchBar({ handleSearch }) {
       <input
         type="text"
         placeholder="Search a Webtoons"
-        onChange={(e) => handleSearch(e.target.value)}
+        onChange={(e) => handleSearch(e .target.value)}
       />
       <div className={styles.search}  />
     </div>
