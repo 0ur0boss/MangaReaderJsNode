@@ -3,4 +3,5 @@
     grid-template-columns:repeat(auto-fit,minmax(12rem,16rem));
     column-gap: 2rem;
     justify-content:center;
+    padding-bottom: 1rem;
 }
