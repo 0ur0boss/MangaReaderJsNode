@@ -26,7 +26,7 @@ const Card = ({ manga, favs, handleFav }) => {
       >
         {btn}
       </button>
-      <BtnFav className={styles.card_btn}
+      <BtnFav 
         id={id}
         isFaved={favs.includes(id)}
         onClick={() => handleFav(id)}

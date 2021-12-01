@@ -39,7 +39,8 @@ const Home = () => {
       {/* le container qui a toutes les cards */}
       <div className={styles.wrapper}>
         {/* une card avec les differents options */}
-        {/* i map the mangas and pass them to card */}
+
+        {/*map des mangas qui deviennent des cards */}
         {filteredMangas.map((manga) => (
           <Card
             key={manga.id}
