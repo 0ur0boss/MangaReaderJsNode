@@ -7,8 +7,7 @@ import image3 from '../../img/lecteuromniscient.jpg'
 // solution 1: déclarer 1 boolean / publication pour chaque utilisateur 
 //             PROBLEME : je déclare autant de boolean que de publication (ex: j'ai 3 000 000 de publi j'ai 3 000 000 )
 // solution 2 : déclarer une liste de favoris (qui s'agrandie a chaque fois que j'aime un new truc)
-export const imageSlider =
-[
+export const imageSlider = [
     {
         id : 1,
         title : "WhiteBlood",

@@ -2,11 +2,15 @@ import React from "react";
 import styles from "./Card.module.css";
 import BtnFav from "../BtnFav";
 
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 const Card = ({ manga, favs, handleFav }) => {
-  const history = useHistory();
   const { img, title, btn, description, id } = manga;
+  
+
+
+
 
   return (
     <div className={styles.card}>
@@ -16,16 +20,15 @@ const Card = ({ manga, favs, handleFav }) => {
         <p className={styles.card_description}>{description}</p>
       </div>
       {/* <button className={styles.card_btn}>{Btn}</button> */}
-      {/* <Link className={styles.card_btn} to="/manga-description">Acceder aux chapitres</Link> */}
-      <button
-        className={styles.card_btn}
-        onClick={() => {
-          history.push("/manga-description");
-        }}
-        type="button"
-      >
-        {btn}
-      </button>
+      <Link to="/manga-description">
+        <button
+          className={styles.card_btn}
+          type="button"
+        >
+          {btn}
+        </button>
+      </Link>
+
       <BtnFav className={styles.card_btn}
         id={id}
         isFaved={favs.includes(id)}
