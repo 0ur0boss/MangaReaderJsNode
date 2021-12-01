@@ -16,14 +16,14 @@ const Card = ({ manga, favs, handleFav }) => {
         <p className={styles.card_description}>{description}</p>
       </div>
       {/* <button className={styles.card_btn}>{Btn}</button> */}
-      <Link to="/manga-description">
+      {/* <Link to="/manga-description"> */}
         <button
           className={styles.card_btn}
           type="button"
         >
           {btn}
         </button>
-      </Link>
+      {/* </Link> */}
 
       <BtnFav
         id={id}
