@@ -2,6 +2,9 @@ import React, { useContext, useState, useEffect } from 'react'
 // import BtnFav from "components/BtnFav";
 import { useParams } from "react-router-dom";
 import AppContext from "../../contexts/AppContext";
+import styles from "./Webtoon.module.css";
+import { Link } from "react-router-dom";
+
 
 
 const Webtoon = () => {
@@ -14,11 +17,28 @@ const Webtoon = () => {
     setFilteredManga(mangas.find(manga => manga.id === parseInt(mangaId)));
   }, [mangaId, mangas]);
 
-  
+
 
   return (<div>
-      <div>ID : {filteredManga?.id || 'no id'}</div>
-      <div>Title : {filteredManga?.title || 'no title'}</div>
+
+      <div >
+        <img src={filteredManga?.img || 'no img'} alt="" className={styles.web_img}  />
+        <div className={styles.web_container}>
+          <div className={styles.web_containerStart}>
+          <Link to={`/Home`}>
+            <button className={styles.web_btn}  type="button">Retour a l'Accueil</button>
+          </Link>
+            <div className={styles.web_tag,styles.web_txt} >tag : {filteredManga?.tag || 'no tag'}</div>
+            <h1 className={styles.web_title} >Title : {filteredManga?.title || 'no title'}</h1>
+            <div className={styles.web_author} >author : {filteredManga?.author || 'no author'}</div>
+          </div>
+          <div className={styles.web_containerEnd}>
+            <div className={styles.web_description} >Description: {filteredManga?.description || 'no description'}</div>
+            <button className={styles.web_btn} onclick='https://www.webtoons.com/fr' type="button">Lire le chapitre 1</button>
+          </div>
+        </div>
+      </div>
+
     </div>
    );
 
