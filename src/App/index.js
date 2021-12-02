@@ -5,9 +5,6 @@ import AppContext from "../contexts/AppContext";
 import cards from "components/data/cards";
 // import posts from "components/data/posts";
 
-
-// import Header from "components/Header";
-
 // Pages
 import Home from 'pages/Home'
 import Webtoon from '../pages/Webtoon/Webtoon.js'
