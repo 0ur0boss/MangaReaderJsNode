@@ -5,6 +5,7 @@ import Card from "../../components/Card";
 import Slider from "../../components/Slider";
 import SearchBar from "../../components/SearchBar";
 import AppContext from "../../contexts/AppContext";
+import ShowFavorite from "../../components/ZoneFav/ShowFavorite";
 
 const Home = () => {
 
@@ -23,6 +24,7 @@ const Home = () => {
   const filteredMangas = mangas.filter((manga) =>
     manga.title.toLowerCase().includes(search.toLowerCase())
   );
+  // console.log(favs);
 
   return (
     <div>
@@ -30,6 +32,11 @@ const Home = () => {
         <Slider />
       </div>
       <SearchBar handleSearch={handleSearch} />
+
+      {/* Mettre les cartes favorites dans une zone dédiée*/}
+      <ShowFavorite handleFav={handleFav} />
+      
+
 
       {/* le container qui a toutes les cards */}
       <div className={styles.wrapper}>

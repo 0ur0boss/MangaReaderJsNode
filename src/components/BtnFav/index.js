@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { ReactComponent as Icon } from './icon.svg'
 
 const BtnFav = ({ isFaved, onClick }) => {
-  console.log(styles)
+  // console.log(styles)
   return (
 
     <div className={clsx(styles.icon, isFaved && styles.favoriteIcon)} >
@@ -16,9 +16,7 @@ const BtnFav = ({ isFaved, onClick }) => {
     </div>
 
     // <img className={styles.heartbtn} type="button" onClick={onClick} src={isFaved ? (image101) : (image100)}></img>
-    
-
-    
+   
     // <p className={styles.hearty} type="button" onClick={onClick}>❤</p>
     // <button className={styles.hearty} type="button">❤</button>
 
