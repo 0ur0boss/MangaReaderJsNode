@@ -31,10 +31,15 @@ const Home = () => {
       <div>
         <Slider />
       </div>
-      <SearchBar handleSearch={handleSearch} />
+      <SearchBar handleSearch={handleSearch} search={search} />
 
       {/* Mettre les cartes favorites dans une zone dédiée*/}
-      <ShowFavorite handleFav={handleFav} />
+      {favs.length > 0 && (
+        <div>
+          <h1>Vos favoris</h1>
+          <ShowFavorite handleFav={handleFav} />
+        </div>
+      )}
       
 
 
