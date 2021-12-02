@@ -23,6 +23,7 @@ function App() {
     }
 
     setFavs((prev) => [...prev, id]);
+
   }
 
   const contextValues = {

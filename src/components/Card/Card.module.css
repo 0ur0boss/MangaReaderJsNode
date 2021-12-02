@@ -55,3 +55,9 @@
     background: var(--main-color);
     color:  var(--background-color);
 }
+
+.card_btnfav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
