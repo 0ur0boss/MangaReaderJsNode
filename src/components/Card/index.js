@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Card.module.css";
 import BtnFav from "../BtnFav";
 import { Link } from "react-router-dom";
-import AppContext from "../../contexts/AppContext";
 
 
 const Card = ({ manga, favs, handleFav, hideDescription = false }) => {

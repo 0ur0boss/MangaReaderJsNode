@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 const Webtoon = () => {
   // je recupaire le l'iD dans l URL
   const { mangaId } = useParams();
@@ -28,17 +29,16 @@ const Webtoon = () => {
           <Link to={`/Home`}>
             <button className={styles.web_btn}  type="button">Retour a l'Accueil</button>
           </Link>
-            <div className={styles.web_tag,styles.web_txt} >tag : {filteredManga?.tag || 'no tag'}</div>
+            <div className={styles.web_tag} >tag : {filteredManga?.tag || 'no tag'}</div>
             <h1 className={styles.web_title} >Title : {filteredManga?.title || 'no title'}</h1>
             <div className={styles.web_author} >author : {filteredManga?.author || 'no author'}</div>
           </div>
           <div className={styles.web_containerEnd}>
-            <div className={styles.web_description} >Description: {filteredManga?.description || 'no description'}</div>
-            <button className={styles.web_btn} onclick='https://www.webtoons.com/fr' type="button">Lire le chapitre 1</button>
+            <div className={styles.web_description}>Description: {filteredManga?.description || 'no description'}</div>
+            <a className={styles.web_a} href="https://www.webtoons.com/fr">Lire le chapitre 1</a>
           </div>
         </div>
       </div>
-
     </div>
    );
 

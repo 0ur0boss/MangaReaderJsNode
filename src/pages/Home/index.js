@@ -31,7 +31,6 @@ const Home = () => {
       <div>
         <Slider />
       </div>
-      <SearchBar handleSearch={handleSearch} search={search} />
 
       {/* Mettre les cartes favorites dans une zone dédiée*/}
       {favs.length > 0 && (
@@ -42,6 +41,20 @@ const Home = () => {
       )}
       
 
+
+      <SearchBar handleSearch={handleSearch} search={search} />
+
+
+      {/* <div className={styles.custom_select}>
+        <select>
+          <option value="0">Tous les mangas</option>
+          <option value="1">Fantastique</option>
+          <option value="2">Romance</option>
+          <option value="3">Comédie</option>
+          <option value="4">Thriller</option>
+          <option value="5">Drama</option>
+        </select>
+      </div> */}
 
       {/* le container qui a toutes les cards */}
       <div className={styles.wrapper}>
