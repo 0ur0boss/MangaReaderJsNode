@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect }  from "react";
+import React, { useContext }  from "react";
 import styles from "./Home.module.css";
 // import { cards } from "../../components/data/cards";
 import Card from "../../components/Card";
@@ -6,7 +6,7 @@ import Slider from "../../components/Slider";
 import SearchBar from "../../components/SearchBar";
 import AppContext from "../../contexts/AppContext";
 import ShowFavorite from "../../components/ZoneFav/ShowFavorite";
-import { func } from "prop-types";
+
 
 const Home = () => {
 
