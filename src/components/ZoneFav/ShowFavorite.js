@@ -5,17 +5,16 @@ import styles from "./ShowFavorite.module.css";
 // showFavorite.provide('AppContext')
 import AppContext from "../../contexts/AppContext";
 import React, { useContext } from "react";
-import clsx from "clsx";
-
 
 
 const ShowFavorite = ({ handleFav }) => {
-    const { mangas, favs, isFaved } = useContext(AppContext);
+    const { mangas, favs } = useContext(AppContext);
     console.log(favs.length);
 
 
     return (
         <div>
+            
             <div className={styles.wrapperShowFavorite}>
 
                 {favs.map((fav) => {
@@ -38,3 +37,4 @@ const ShowFavorite = ({ handleFav }) => {
 }
 
 export default ShowFavorite;
+

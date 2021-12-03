@@ -33,13 +33,19 @@ const Home = () => {
       </div>
 
       {/* Mettre les cartes favorites dans une zone dédiée*/}
-      <ShowFavorite handleFav={handleFav} />
+      {favs.length > 0 && (
+        <div>
+          <h1>Vos favoris</h1>
+          <ShowFavorite handleFav={handleFav} />
+        </div>
+      )}
       
 
-      <SearchBar handleSearch={handleSearch} />
+
+      <SearchBar handleSearch={handleSearch} search={search} />
 
 
-      <div className={styles.custom_select}>
+      {/* <div className={styles.custom_select}>
         <select>
           <option value="0">Tous les mangas</option>
           <option value="1">Fantastique</option>
@@ -48,7 +54,7 @@ const Home = () => {
           <option value="4">Thriller</option>
           <option value="5">Drama</option>
         </select>
-      </div>
+      </div> */}
 
       {/* le container qui a toutes les cards */}
       <div className={styles.wrapper}>
