@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import AppContext from "../../contexts/AppContext";
 
 
-const Card = ({ manga, favs, handleFav }) => {
+const Card = ({ manga, favs, handleFav, hideDescription = false }) => {
   const { img, title, btn, description, id } = manga;
 
   return (
@@ -20,8 +20,9 @@ const Card = ({ manga, favs, handleFav }) => {
         />
         </div>  
         <h2 className={styles.card_title}> {title}</h2>
-
-        <p className={styles.card_description}>{description}</p>
+        {hideDescription === false && (
+          <p className={styles.card_description}>{description}</p>
+        )}
       </div>
       {/* <button className={styles.card_btn}>{Btn}</button> */}
       <Link to={`/manga/${id}`}>
