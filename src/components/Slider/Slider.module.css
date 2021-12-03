@@ -12,13 +12,13 @@
   }
 
 .overlay {
-    width: 80%;
+    width: 30%;
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    left:10%;
+    left:63%;
     padding: 0.4rem 1.5rem;
-    text-align: right;
+    text-align: center;
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
   }
@@ -38,15 +38,29 @@
   margin-right: auto;
   display: flex;
   justify-content: center;  
+  
 }
 
 .imgSlider {
   object-fit: cover;  
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
   .contenant {
-    max-width: 500px;
-    max-height: auto;
+    max-width: 100%;
+    height: 100%; 
+    object-fit: cover;  
   }
+  .overlay {
+    width: 80%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:10%;
+    padding: 0.4rem 1.5rem;
+    text-align: right;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
 }
