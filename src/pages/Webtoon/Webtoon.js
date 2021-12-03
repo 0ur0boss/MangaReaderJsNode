@@ -4,8 +4,7 @@ import { useParams } from "react-router-dom";
 import AppContext from "../../contexts/AppContext";
 import styles from "./Webtoon.module.css";
 import { Link } from "react-router-dom";
-
-
+import classNames from "classnames";
 
 
 const Webtoon = () => {
@@ -29,7 +28,7 @@ const Webtoon = () => {
           <Link to={`/Home`}>
             <button className={styles.web_btn}  type="button">Retour a l'Accueil</button>
           </Link>
-            <div className={styles.web_tag} >tag : {filteredManga?.tag || 'no tag'}</div>
+          <div className={classNames(styles.web_tag, styles.web_txt)}> tag : {filteredManga?.tag || 'no tag'}</div>
             <h1 className={styles.web_title} >Title : {filteredManga?.title || 'no title'}</h1>
             <div className={styles.web_author} >author : {filteredManga?.author || 'no author'}</div>
           </div>
