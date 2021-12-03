@@ -4,6 +4,11 @@
     object-fit: cover;
     position: absolute;
     opacity: 50%;
+    z-index: -1;    
+}
+
+.web_description{
+    margin-bottom: 2rem;
 }
 
 .web_container{
@@ -12,10 +17,28 @@
     height:100vh;
     width: 100%;
     justify-content: space-between;
+    z-index: 1;
     padding: 5rem;
 }
 
+.web_a{
+    padding:1rem;
+    font-weight: bold;
+    font: size 1rem;
+    margin: 1rem;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);;
+    border-radius:0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+    text-decoration: none;
 
+}
+
+.web_a:hover{
+    background: var(--main-color);
+    color:  var(--background-color);
+}
 
 .web_btn{
     padding:1rem;

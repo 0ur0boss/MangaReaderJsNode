@@ -33,12 +33,11 @@ const Webtoon = () => {
             <div className={styles.web_author} >author : {filteredManga?.author || 'no author'}</div>
           </div>
           <div className={styles.web_containerEnd}>
-            <div className={styles.web_description} >Description: {filteredManga?.description || 'no description'}</div>
-            <button className={styles.web_btn} onclick='https://www.webtoons.com/fr' type="button">Lire le chapitre 1</button>
+            <div className={styles.web_description}>Description: {filteredManga?.description || 'no description'}</div>
+            <a className={styles.web_a} href="https://www.webtoons.com/fr">Lire le chapitre 1</a>
           </div>
         </div>
       </div>
-
     </div>
    );
 
