@@ -12,7 +12,6 @@ const ShowFavorite = ({ handleFav }) => {
 
     return (
         <div>
-            
             <div className={styles.wrapperShowFavorite}>
 
                 {favs.map((fav) => {
@@ -26,7 +25,6 @@ const ShowFavorite = ({ handleFav }) => {
                             hideDescription
                         />
                     )
-
                 })}
             </div>
         </div>
