@@ -1,8 +1,6 @@
 import Card from "../../components/Card";
 import styles from "./ShowFavorite.module.css";
-// import BtnFav from "../../components/BtnFav";
 
-// showFavorite.provide('AppContext')
 import AppContext from "../../contexts/AppContext";
 import React, { useContext } from "react";
 
@@ -25,7 +23,7 @@ const ShowFavorite = ({ handleFav }) => {
                             manga={manga}
                             favs={favs}
                             handleFav={handleFav}
-
+                            hideDescription
                         />
                     )
 

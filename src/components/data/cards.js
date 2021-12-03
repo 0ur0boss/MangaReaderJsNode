@@ -49,7 +49,7 @@ const cards = [
   {
     id: 4,
     title: "Adorablement Chien",
-    description: "Maudite, Haena devient un chien dès son premier baiser. Le seul...",
+    description: "Maudite, Haena se transforme en chien dès son premier baiser. Le seul...",
     author: "Lee Hey",
     tag: "Romance",
     img: image4,

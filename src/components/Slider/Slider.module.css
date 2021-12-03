@@ -32,14 +32,21 @@
 }
 
 .contenant {
-  max-width: 600px;
-  max-height: auto;
+  max-width: 100%;
+  max-height: 500px;
   margin-left: auto;
   margin-right: auto;
-  }
+  display: flex;
+  justify-content: center;  
+}
 
-@media screen and (max-width: 768px) {
+.imgSlider {
+  object-fit: cover;  
+}
+
+@media screen and (max-width: 769px) {
   .contenant {
     max-width: 500px;
+    max-height: auto;
   }
 }

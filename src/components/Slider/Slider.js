@@ -30,7 +30,7 @@ function Slider() {
     // setItemsListRef: (node: HTMLUListElement) => void; setItemsListRef={null}   setThumbsRef={null}
 
     // }
-    return (<Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} div className={styles.contenant}>
+    return (<Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
         { imageSlider.map(function (elt) { return <div className={styles.contenant}>
                     <img className={styles.imgSlider} src={elt.imageUrl } alt="webtoons" />
                     <div className={styles.overlay}>
